@@ -1,4 +1,5 @@
 const Skill = require('../models/skill')
+const chalk = require('chalk');
 
 module.exports = {
     index,
@@ -45,7 +46,8 @@ function edit (req, res) {
 }
 
 function update (req, res) {
+    console.log(chalk.blue(req.params.id))
     req.body.proficient = req.body.proficient === 'on';
     Skill.update(req.params.id, req.body);
-    res.redirect('/skills');
+    res.redirect(`/skills/${req.params.id}`);
 }
