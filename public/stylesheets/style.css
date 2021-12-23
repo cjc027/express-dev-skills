@@ -12,12 +12,20 @@ a {
 }
 
 .delete-form {
-  display: inline-block;
-  margin-right: 10px;
+  display: block;
 }
 	
 .delete-form button {
-  color: red;
+  border: none;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  background-color: rgb(196, 26, 26);
+  color: white;
+}
+
+.delete-form button:hover {
+  box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 
 ul {
