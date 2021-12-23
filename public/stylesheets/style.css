@@ -1,6 +1,10 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -15,7 +19,12 @@ a {
 .delete-form button {
   color: red;
 }
-	
+
+ul {
+  padding-left: 0px;
+}
+
 li {
   list-style: none;
+  margin: 5px 0;
 }
